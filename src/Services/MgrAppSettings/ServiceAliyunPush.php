@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Poppy\AliyunPush\Services;
+namespace Poppy\AliyunPush\Services\MgrAppSettings;
 
-use Poppy\AliyunPush\Forms\Settings\FormSettingAliyunPush;
+use Poppy\AliyunPush\Forms\MgrAppSettings\SettingAliyunPush;
 use Poppy\Core\Services\Contracts\ServiceArray;
 
-class SettingAliyunPush implements ServiceArray
+class ServiceAliyunPush implements ServiceArray
 {
     public function key(): string
     {
@@ -19,7 +19,7 @@ class SettingAliyunPush implements ServiceArray
         return [
             'title' => '阿里云推送',
             'forms' => [
-                FormSettingAliyunPush::class,
+                SettingAliyunPush::class,
             ],
         ];
     }
