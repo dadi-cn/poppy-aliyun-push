@@ -2,11 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Poppy\AliyunPush\Forms\Settings;
+namespace Poppy\AliyunPush\Http\MgrPage;
 
 use Poppy\Framework\Validation\Rule;
-use Poppy\System\Exceptions\FormException;
-use Poppy\System\Http\Forms\Settings\FormSettingBase;
+use Poppy\MgrPage\Classes\Form\FormSettingBase;
 
 class FormSettingAliyunPush extends FormSettingBase
 {
